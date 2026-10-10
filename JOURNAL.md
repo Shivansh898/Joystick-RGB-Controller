@@ -7,7 +7,7 @@ created_at: "2026-10-10"
 
 # October 10: Initial hardware setup
 
-Today I connected the joystick and RGB LED to the Raspberry Pi using a breadboard and jumper wires. I checked the GPIO pin assignments and tested that the Raspberry Pi could detect joystick movement correctly.
+Today I connected the joystick and RGB LED to the Raspberry Pi using a breadboard and jumper wires. I tested the GPIO connections and verified that the joystick values could be read correctly through Python.
 
 images/IMG_4755.JPEG
 
@@ -15,7 +15,7 @@ images/IMG_4755.JPEG
 
 # October 10: RGB control testing
 
-I wrote Python code to read the joystick values and use them to control the RGB LED. The first version did not produce the expected colours, so I adjusted the value mapping and retested the circuit.
+I wrote Python code to use joystick movement to control the RGB LED colours. Initially the colour transitions were not smooth, so I adjusted the value mapping and tested different joystick positions until the LED responded correctly.
 
 images/IMG_4756.JPEG
 
@@ -23,7 +23,7 @@ images/IMG_4756.JPEG
 
 # October 10: Debugging and improvements
 
-I continued testing the project and fixed issues with colour changes and responsiveness. I also cleaned up the code and documented the wiring so it would be easier to understand and maintain.
+I continued testing the project and fixed issues with colour changes and responsiveness. I cleaned up the code and reviewed the wiring so the project would be easier to understand and maintain.
 
 images/IMG_4758.JPEG
 
