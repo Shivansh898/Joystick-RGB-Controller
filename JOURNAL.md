@@ -15,7 +15,7 @@ images/IMG_4755.JPEG
 
 # October 10: RGB control testing
 
-I wrote Python code to use joystick movement to control the RGB LED colours. Initially the colour transitions were not smooth, so I adjusted the value mapping and tested different joystick positions until the LED responded correctly.
+I wrote Python code to use joystick movement to control the RGB LED colours. Initially the colour transitions were not smooth, so I adjusted the value mapping and tested different joystick positions.
 
 images/IMG_4756.JPEG
 
@@ -23,7 +23,7 @@ images/IMG_4756.JPEG
 
 # October 10: Debugging and improvements
 
-I continued testing the project and fixed issues with colour changes and responsiveness. I cleaned up the code and reviewed the wiring so the project would be easier to understand and maintain.
+I continued testing the project and fixed issues with colour changes and responsiveness. I cleaned up the code and reviewed the wiring.
 
 images/IMG_4758.JPEG
 
