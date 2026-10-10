@@ -1,3 +1,4 @@
+
 title: "Joystick RGB Controller" author: "mrshivanshsri" description: "A Raspberry Pi project that uses a joystick to control the color of an RGB LED in real time." created_at: "2026-10-10"
 October 10: Built joystick RGB control system
 Worked on connecting the joystick and RGB LED to the Raspberry Pi. Set up the GPIO pins and wrote the initial Python code to read joystick input values.
