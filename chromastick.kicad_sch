@@ -1,0 +1,15 @@
+ChromaStick Schematic
+
+Components:
+- Raspberry Pi
+- Joystick Module
+- RGB LED
+- 3x 220 Ohm Resistors
+
+Connections:
+GPIO -> RGB LED
+GPIO -> Joystick X
+GPIO -> Joystick Y
+Ground -> Common Ground
+
+This project was prototyped on a breadboard and does not use a custom PCB.
