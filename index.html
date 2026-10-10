@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChromaStick Control Center</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+padding:30px;
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+background:linear-gradient(90deg,#ff0000,#00ff00,#0000ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(15px);
+padding:20px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.color-preview{
+height:200px;
+border-radius:15px;
+margin-top:10px;
+background:rgb(255,0,0);
+box-shadow:0 0 30px red;
+}
+
+.slider{
+width:100%;
+margin:10px 0;
+}
+
+.value{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.status{
+color:#00ff88;
+font-weight:bold;
+}
+
+button{
+padding:12px;
+margin:5px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.rainbow{
+background:linear-gradient(90deg,red,orange,yellow,green,blue,purple);
+}
+
+.pulse{
+background:#00bfff;
+}
+
+.static{
+background:#999;
+}
+
+.strobe{
+background:#ff3b3b;
+}
+
+.data{
+font-size:22px;
+margin:10px 0;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🌈 ChromaStick Control Center</h1>
+
+<div class="grid">
+
+<div class="card">
+<h2>RGB Preview</h2>
+
+<div class="value">Red: <span id="rValue">255</span></div>
+<input type="range"
+class="slider"
+id="red"
+min="0"
+max="255"
+value="255">
+
+<div class="value">Green: <span id="gValue">0</span></div>
+<input type="range"
+class="slider"
+id="green"
+min="0"
+max="255"
+value="0">
+
+<div class="value">Blue: <span id="bValue">0</span></div>
+<input type="range"
+class="slider"
+id="blue"
+min="0"
+max="255"
+value="0">
+
+<div class="color-preview" id="preview"></div>
+
+</div>
+
+<div class="card">
+
+<h2>Joystick Data</h2>
+
+<div class="data">
+X Position: <span id="x">128</span>
+</div>
+
+<div class="data">
+Y Position: <span id="y">128</span>
+</div>
+
+<div class="data">
+Button: Released
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Lighting Modes</h2>
+
+<button class="rainbow">Rainbow</button>
+<button class="pulse">Pulse</button>
+<button class="static">Static</button>
+<button class="strobe">Strobe</button>
+
+</div>
+
+<div class="card">
+
+<h2>System Status</h2>
+
+<p class="status">
+🟢 Connected to ChromaStick
+</p>
+
+<br>
+
+<p>
+Brightness: 85%
+</p>
+
+<p>
+Response Time: 12ms
+</p>
+
+<p>
+GPIO Active: Yes
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+const red=document.getElementById("red");
+const green=document.getElementById("green");
+const blue=document.getElementById("blue");
+
+const preview=document.getElementById("preview");
+
+function updateColor(){
+
+let r=red.value;
+let g=green.value;
+let b=blue.value;
+
+document.getElementById("rValue").innerText=r;
+document.getElementById("gValue").innerText=g;
+document.getElementById("bValue").innerText=b;
+
+preview.style.background=
+`rgb(${r},${g},${b})`;
+
+preview.style.boxShadow=
+`0 0 40px rgb(${r},${g},${b})`;
+
+}
+
+red.oninput=updateColor;
+green.oninput=updateColor;
+blue.oninput=updateColor;
+
+setInterval(()=>{
+
+document.getElementById("x").innerText=
+Math.floor(Math.random()*255);
+
+document.getElementById("y").innerText=
+Math.floor(Math.random()*255);
+
+},1000);
+
+</script>
+
+</body>
+</html>
