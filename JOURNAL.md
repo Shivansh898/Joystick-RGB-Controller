@@ -10,3 +10,18 @@ Through this project I learned more about GPIO programming, analog input handlin
 
 What's Next
 Next, I would like to add preset colour modes, brightness controls, and more advanced lighting effects. I also want to improve the user experience by making the controls more intuitive and adding additional features.
+Devlog
+2026-10-10
+Today I worked on the project and continued development.
+
+What I did
+Set up the project structure
+Tested existing features
+Fixed minor bugs
+Planned the next development tasks
+Challenges
+Encountered issues with configuration and testing.
+Next Steps
+Continue development
+Add new features
+Perform further testing
