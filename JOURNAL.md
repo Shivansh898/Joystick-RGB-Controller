@@ -9,7 +9,7 @@ created_at: "2026-10-10"
 
 Today I connected the joystick and RGB LED to the Raspberry Pi using a breadboard and jumper wires.
 
-images/IMG_4755.JPEG
+https://github.com/Shivansh898/Joystick-RGB-Controller/blob/main/images/IMG_4755.JPEG
 
 **Total time spent: 2 hours**
 
