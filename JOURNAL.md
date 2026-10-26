@@ -11,6 +11,8 @@
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
 | Week 1 | Tier 2 | 15h | 7 |
+<img width="2048" height="1536" alt="IMG_4756" src="https://github.com/user-attachments/assets/77212342-52f5-4042-ba45-102a72d3ee74" />
+<img width="2048" height="1536" alt="IMG_4755" src="https://github.com/user-attachments/assets/3a9b3f03-9b58-4e2d-8d7d-441cd264eed1" />
 
 ## Contents
 
