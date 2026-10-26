@@ -2,14 +2,22 @@ ChromaStick Schematic
 
 Components:
 - Raspberry Pi
+- Raspberry Pi GPIO Extension Board
+- 40-Pin Ribbon Cable
+- Breadboard
+- MCP3008 ADC Module
 - Joystick Module
 - RGB LED
 - 3x 220 Ohm Resistors
 
 Connections:
-GPIO -> RGB LED
-GPIO -> Joystick X
-GPIO -> Joystick Y
+GPIO (SPI) -> MCP3008 ADC
+MCP3008 CH0 -> Joystick X
+MCP3008 CH1 -> Joystick Y
+GPIO -> RGB LED Red
+GPIO -> RGB LED Green
+GPIO -> RGB LED Blue
 Ground -> Common Ground
+3.3V -> MCP3008 and Joystick
 
-This project was prototyped on a breadboard and does not use a custom PCB.
+This project was prototyped on a breadboard using a Raspberry Pi, MCP3008 ADC, analog joystick module, and RGB LED.
